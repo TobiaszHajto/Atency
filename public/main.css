@@ -1,0 +1,513 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap';
+
+body {
+    background-image: url(src/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+    background-color: #161617
+}
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background-color: #161617;
+    width: 100%;
+    height: 100%
+}
+
+.loader {
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px)
+}
+
+    .loader:before, .loader:after {
+        content: '';
+        border: 1em solid #ff33e4;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0
+    }
+
+    .loader:before {
+        animation-delay: .5s
+    }
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+.top_fleyov {
+    color: #9600ff;
+    font-family: roboto,sans-serif;
+    position: relative;
+    left: 40px;
+    top: 24px
+}
+
+.normal_fleyov {
+    color: #9600ff;
+    font-family: roboto,sans-serif;
+    position: relative;
+    left: -480px;
+    top: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    animation: tracking-in-expand 1.3s cubic-bezier(.215,.61,.355,1) both
+}
+
+.fleyov_prices {
+    position: relative;
+    top: 580px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 30px;
+    background-color: #0e0e0e;
+    width: 900px;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px
+}
+
+.fleyov_end {
+    position: relative;
+    top: 720px;
+    padding: 20px
+}
+
+.fleyov_footer {
+    font-size: 25px;
+    font-family: nanum gothic,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    position: relative;
+    padding: 20px;
+    top: 750px;
+    margin-top: -40px;
+    background-color: #0e0e0e;
+    transform: skew(-7deg);
+    box-shadow: #0e0e0e 0 0 20px;
+    left: -700px
+}
+
+.fleyov_author {
+    color: #9600ff;
+    text-align: center;
+    top: 90px
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1
+    }
+}
+
+.fleyov_features {
+    position: relative;
+    top: 630px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 30px;
+    width: 900px;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px
+}
+
+.fleyov_box1 {
+    font-family: nanum gothic,sans-serif;
+    color: #f56bf5;
+    font-size: 35px;
+    text-shadow: purple 0 0 30px;
+    padding: 30px;
+    text-align: center
+}
+
+.fleyov_box2 {
+    font-family: nanum gothic,sans-serif;
+    color: #f56bf5;
+    font-size: 35px;
+    text-shadow: purple 0 0 30px;
+    padding: 30px;
+    text-align: center
+}
+
+@-webkit-keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0)
+    }
+}
+
+@keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0)
+    }
+}
+
+.fleyov_button {
+    background: linear-gradient(90deg,rgba(150,0,255,1) 0%,rgba(183,101,217,1) 35%,rgba(179,110,179,1) 100%);
+    border-radius: 17px;
+    font-family: nanum gothic,sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    padding: 13px 80px;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 0 30px 0 #ff62ff;
+    text-shadow: #fff 0 0 30px;
+    bottom: 30px
+}
+
+    .fleyov_button:hover {
+        animation: heartbeat 3s ease-in-out infinite both
+    }
+
+    .fleyov_button:active {
+        position: relative;
+        top: 1px
+    }
+
+.fleyov_button2 {
+    border-radius: 17px;
+    font-family: nanum gothic,sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    color: purple;
+    text-shadow: purple 0 0 30px;
+    font-size: 30px;
+    padding: 13px 45px;
+    border: purple solid 2px;
+    box-shadow: 0 0 30px 0 #ff62ff;
+    text-decoration: none;
+    position: relative;
+    bottom: 30px
+}
+
+.fleyov_login {
+    border-radius: 28px;
+    font-family: nanum gothic,sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    color: purple;
+    text-shadow: purple 0 0 30px;
+    font-size: 15px;
+    padding: 7px 25px;
+    border: purple solid 2px;
+    box-shadow: 0 0 30px 0 #ff62ff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    left: 90%;
+}
+
+    .fleyov_login:hover {
+        opacity: 0.4;
+        animation: fade 3s linear infinite forwards;
+    }
+
+.fleyov_button2:hover {
+    animation: heartbeat 3s ease-in-out infinite both
+}
+
+.fleyov_button2:active {
+    position: relative;
+    top: 1px
+}
+
+.fleyov_down1 {
+    position: relative;
+    top: 580px;
+    font-family: nanum gothic,sans-serif;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    animation: fade-in 5s cubic-bezier(.39,.575,.565,1) both;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fleyov_down2 {
+    position: relative;
+    font-family: nanum gothic,sans-serif;
+    top: 670px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    animation: fade-in 5s cubic-bezier(.39,.575,.565,1) both;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@keyframes fade {
+    0%,100% {
+        opacity: 0.4
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #161617;
+    box-shadow: inset 0 0 5px #161617
+}
+
+::-webkit-scrollbar-thumb {
+    background: purple;
+    border-radius: 10px
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: purple
+    }
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fleyov_buybutton {
+    background: linear-gradient(90deg,rgba(150,0,255,1) 0%,rgba(183,101,217,1) 35%,rgba(179,110,179,1) 100%);
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial;
+    font-size: 17px;
+    margin: 10px;
+    padding: 10px 60px;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff
+}
+
+    .fleyov_buybutton:hover {
+        background-color: #5cbf2a;
+        animation: fade 1s infinite ease forwards;
+    }
+
+    .fleyov_buybutton:active {
+        position: relative;
+        top: 1px;
+        animation: fade 0.2s infinite ease forwards;
+    }
